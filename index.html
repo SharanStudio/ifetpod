@@ -38,17 +38,16 @@
             box-shadow: 0 8px 32px rgba(15, 44, 92, 0.15);
             flex-shrink: 0;
         }
-        
         .header-content {
-            max-width: 1400px;
-            margin: 0 auto;
+            width: 55%;                      /* Match map width */
+            max-width: 1000px;               /* Match map max-width */
+            margin: 0 auto;                  /* CENTER IT */
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            gap: 40px;
+            justify-content: flex-start;     /* Logos on left, text follows */
+            gap: 30px;
             flex-wrap: wrap;
         }
-        
         .logos {
             display: flex;
             gap: 25px;
@@ -74,6 +73,7 @@
         .header-text {
             flex: 1;
             min-width: 300px;
+            margin: auto;  
         }
         
         .header-text h1 {
@@ -81,6 +81,8 @@
             font-weight: 700;
             margin-bottom: 4px;
             letter-spacing: -0.5px;
+            margin: auto;  
+
         }
         
         .header-text p {
@@ -88,11 +90,11 @@
             opacity: 0.95;
             line-height: 1.4;
             font-weight: 400;
+            margin: auto;  
         }
         
         /* Main Container */
         .container {
-            flex: 1;
             width: 100%;
             margin: 0;
             padding: 12px;
@@ -104,17 +106,25 @@
             overflow: hidden;
         }
         
-        .map-container {
-            flex: 1;
-            padding: 0;
+       .map-container {
+            width: 100%;                 /* Reduce width from full page */
+            max-width: 500px;          /* Maximum width */
+            height: 500px;              /* Fixed height instead of flex: 1 */
+            padding: 10px;
             display: flex;
             flex-direction: column;
             overflow: hidden;
-        }
+            margin: auto;               /* Center it */
+            background: white;          /* Add white background */
+            border-radius: 8px;         /* Rounded corners */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);  /* Subtle shadow */
+    }
         
         iframe {
-            width: 100%;
-            height: 100%;
+            width: 55%;
+            height: 90%;
+            padding: 10px;
+            margin: auto; 
             border: none;
             border-radius: 8px;
         }
@@ -342,8 +352,7 @@
     </div>
     
     <footer>
-        <p>&copy; 2026 ICMR National Institute of Epidemiology. All rights reserved.</p>
-        <p>For queries, contact: <a href="mailto:nietraining@nieicmr.org.in">nietraining@nieicmr.org.in</a></p>
+        <p>&copy; 2026 ICMR National Institute of Epidemiology | For queries, contact: <a href="mailto:nietraining@nieicmr.org.in">nietraining@nieicmr.org.in</a></p>
     </footer>
 </body>
 </html>
