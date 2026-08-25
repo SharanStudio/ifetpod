@@ -77,7 +77,7 @@
         }
         
         .header-text h1 {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 700;
             margin-bottom: 4px;
             letter-spacing: -0.5px;
@@ -86,11 +86,37 @@
         }
         
         .header-text p {
-            font-size: 12px;
+            font-size: 14px;
             opacity: 0.95;
             line-height: 1.4;
             font-weight: 400;
-            margin: auto;  
+            margin: auto; 
+            font-style: italic;  
+        }
+                /* Yellow Banner */
+        .highlight-banner {
+            background-color: #ffc107;          /* Yellow */
+            width: 100%;                        /* Full width */
+            padding: 12px 20px;                 /* Padding */
+            text-align: center;                 /* Center text */
+            flex-shrink: 0;
+        }
+        .banner-title {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            letter-spacing: 0.3px;
+            margin-bottom: 3px;                 /* Space before subtitle */
+        }
+        .banner-subtitle {
+            margin: 0;
+            font-size: 10px;
+            font-weight: 400;
+            color: #555;
+            letter-spacing: 0.2px;
+            line-height: 1.3;
+            font-style: italic; 
         }
         
         /* Main Container */
@@ -321,11 +347,15 @@
                 </div>
             </div>
             <div class="header-text">
-                <h1>First Indian State to have one Trained FETP Officer in all its Districts </h1>
-                <p>Geographic distribution of FETP-trained Officers in Odisha State</p>
+                <h1>India FETP trained Officers & their details - Odisha</h1>
+                <p>Hover over districts to view officer details and contact information</p>
             </div>
         </div>
     </header>
+   <div class="highlight-banner">
+    <p class="banner-title">First Indian State to have one Trained FETP Officer in all its Districts</p>
+    <p class="banner-subtitle">Led by ICMR-NIE along with ICMR-NIHR Bhubaneswar, Dept. H & FW, Odisha, CDC India & Safetynet</p>
+</div>
 
   <iframe src="https://datawrapper.dwcdn.net/FjwBv/2/" 
         title="India FETP Trained Officers Map">
