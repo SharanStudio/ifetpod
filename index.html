@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India FETP - Trained Officers by District</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background-color: #1a5490;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .logos {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 60px;
+            filter: brightness(0) invert(1);
+        }
+        
+        .header-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .header-text h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header-text p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .map-container {
+            padding: 30px;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        
+        .metadata {
+            padding: 20px 30px;
+            background-color: #f9f9f9;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #666;
+        }
+        
+        .metadata p {
+            margin: 8px 0;
+        }
+        
+        .metadata strong {
+            color: #333;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #666;
+            font-size: 12px;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            
+            .logos {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .header-text h1 {
+                font-size: 20px;
+            }
+            
+            iframe {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logos">
+                <div class="logo">
+                    <img src="https://www.icmr.gov.in/sites/default/files/2022-08/ICMR_Logo_1.png" alt="ICMR Logo">
+                </div>
+                <div class="logo">
+                    <img src="https://fetp.icmr.org.in/sites/default/files/2023-04/FETP%20Logo%20-%20Final_1.png" alt="India FETP Logo">
+                </div>
+            </div>
+            <div class="header-text">
+                <h1>India FETP Trained Officers</h1>
+                <p>Geographic distribution of epidemiologists and public health professionals trained under India's Field Epidemiology Training Programme (FETP)</p>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="map-container">
+            <iframe src="https://datawrapper.dwcdn.net/FjwBv/2/" title="India FETP Trained Officers Map"></iframe>
+        </div>
+        
+        <div class="metadata">
+            <p><strong>Data Source:</strong> India FETP Programme, ICMR – National Institute of Epidemiology</p>
+            <p><strong>Date Updated:</strong> August 2026</p>
+            <p><strong>Geographic Coverage:</strong> All Indian districts</p>
+            <p><strong>Note:</strong> Hover over districts to view names, designations, and contact details of trained officers</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 ICMR – National Institute of Epidemiology. All rights reserved.</p>
+        <p>For queries, contact: <a href="mailto:fetp@icmr.org.in">fetp@icmr.org.in</a></p>
+    </footer>
+</body>
+</html>
