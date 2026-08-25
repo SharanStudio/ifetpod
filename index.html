@@ -238,100 +238,129 @@
             }
         }
         
-        @media (max-width: 768px) {
-            body {
-                background: #f5f7fa;
-            }
-            
-            header {
-                padding: 12px 16px;
-            }
-            
-            .header-content {
-                flex-direction: column;
-                gap: 12px;
-            }
-            
-            .logos {
-                flex-direction: row;
-                gap: 12px;
-                justify-content: center;
-            }
-            
-            .logo {
-                height: 50px;
-                padding: 8px 12px;
-            }
-            
-            .logo img {
-                height: 35px;
-            }
-            
-            .header-text {
-                text-align: center;
-            }
-            
-            .header-text h1 {
-                font-size: 18px;
-            }
-            
-            .header-text p {
-                font-size: 12px;
-            }
-            
-            .container {
-                padding: 8px;
-            }
-            
-            .map-container {
-                padding: 0;
-            }
-            
-            footer {
-                padding: 6px 12px;
-                font-size: 10px;
-            }
-        }
+@media (max-width: 768px) {
+    body {
+        background: #f5f7fa;
+    }
+    
+    header {
+        padding: 12px 16px;
+    }
+    
+    .header-content {
+        width: 100% !important;          /* FULL WIDTH */
+        max-width: none;                 /* Remove max-width limit */
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .logos {
+        flex-direction: row;
+        gap: 12px;
+        justify-content: center;
+    }
+    
+    .logo {
+        height: 50px;
+        padding: 8px 12px;
+    }
+    
+    .logo img {
+        height: 35px;
+    }
+    
+    .header-text {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .header-text h1 {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+    
+    .header-text p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    
+    .highlight-banner {
+        padding: 10px 12px;
+        width: 100%;
+    }
+    
+    .banner-title {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+    
+    .banner-subtitle {
+        font-size: 10px;
+        line-height: 1.3;
+    }
+    
+    .container {
+        padding: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .map-container {
+        width: 100% !important;          /* FULL WIDTH */
+        max-width: 100% !important;      /* Remove max-width */
+        height: 450px;                   /* Larger height for mobile */
+        padding: 6px;
+        margin: auto;
+    }
+    
+    iframe {
+        width: 100% !important;          /* FULL WIDTH */
+        height: 100%;                    /* Full container height */
+        padding: 0;
+    }
+    
+    footer {
+        padding: 6px 12px;
+        font-size: 9px;
+    }
+}
         
-        @media (max-width: 480px) {
-            header {
-                padding: 10px 8px;
-            }
-            
-            .header-text h1 {
-                font-size: 16px;
-                margin-bottom: 2px;
-            }
-            
-            .header-text p {
-                font-size: 11px;
-            }
-            
-            .logos {
-                gap: 10px;
-            }
-            
-            .logo {
-                height: 45px;
-                padding: 6px 10px;
-            }
-            
-            .logo img {
-                height: 30px;
-            }
-            
-            .container {
-                padding: 6px;
-            }
-            
-            .map-container {
-                padding: 0;
-            }
-            
-            footer {
-                padding: 5px 8px;
-                font-size: 9px;
-            }
+@media (max-width: 480px) {
+    .header-text h1 {
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+    
+    .header-text p {
+        font-size: 11px;
+    }
+    
+    .banner-title {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+    
+    .banner-subtitle {
+        font-size: 9px;
+    }
+    
+    .map-container {
+        height: 400px !important;
+    }
+    
+    .logos {
+        gap: 8px;
+    }
+    
+    .logo {
+        height: 45px;
+        padding: 6px 8px;
+    }
+    
+    .logo img {
+        height: 30px;
+    }
+}
         }
     </style>
 </head>
